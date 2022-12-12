@@ -51,9 +51,9 @@ fun Ui(){
         mutableStateOf(date.getDayOfWeek())
     }
 
-    val color1 = colorResource(id = R.color.color1)
-    val color2 = colorResource(id = R.color.color2)
-    val gradient = Brush.verticalGradient(0.2f to color1, 0.8f to color2)
+
+    val gradient = Brush.verticalGradient(0.2f to colorResource(id = R.color.color1),
+        0.8f to colorResource(id = R.color.color2))
 
     val district = remember {
         mutableStateOf("...")
